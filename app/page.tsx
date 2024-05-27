@@ -7,8 +7,8 @@ export default async function PageHome() {
       throw new Error('Erreur lors de la récupération des données');
   }
 
-  const data = await response
-  console.log(data)
+  const data = await response.json();
+  console.log(data.message)
   return (
     <div>
       <h1>Home</h1>
