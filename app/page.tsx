@@ -2,15 +2,12 @@ import { Button } from "@/components/ui/button"
 
 export default async function PageHome() {
 
-  // const response = await fetch(`http://localhost:3000/api/test`, { cache: 'no-store' });
-  // if (!response.ok) {
-  //     throw new Error('Erreur lors de la récupération des données');
-  // }
+  const response = await fetch(`http://localhost:3000/api/test`, { cache: 'no-store' });
+  if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des données');
+  }
 
-  // await new Promise(resolve => setTimeout(resolve, 1000));
-
-  // const data = await response.json();
-  // console.log(data.message)
+  const data = await response.json();
 
   return (
     <main className="">
