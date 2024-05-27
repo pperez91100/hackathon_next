@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/button"
+import { BASE_API_URL } from "@/utils/constants";
 
 export default async function Page() {
 
-  const response = await fetch(`http://localhost:3000/api/test`);
+  const response = await fetch(`${BASE_API_URL}/api/test`);
   if (!response.ok) {
       throw new Error('Erreur lors de la récupération des données');
   }

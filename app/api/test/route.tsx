@@ -1,10 +1,5 @@
-import { NextRequest } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET(request: NextRequest) {
-          return new Response(
-              JSON.stringify({ success: true, message: "Hello - Test"}),
-              {
-                  headers: { "Content-Type": "application/json" },
-              }
-          );
+export async function GET(req: NextRequest) {
+    return NextResponse.json({ message: 'Hello - GET' });
 }
