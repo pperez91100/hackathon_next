@@ -1,8 +1,8 @@
 import { Button } from "@/components/ui/button"
 
-export default async function PageHome() {
+export default async function Page() {
 
-  const response = await fetch(`http://localhost:3000/api/test`, { cache: 'no-store' });
+  const response = await fetch(`http://localhost:3000/api/test`);
   if (!response.ok) {
       throw new Error('Erreur lors de la récupération des données');
   }
