@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { BASE_API_URL } from "@/utils/constants";
+import { BASE_API_URL } from "@/utils/constants"
 
 export default async function Page() {
 
