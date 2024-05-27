@@ -8,7 +8,8 @@ export default async function PageHome() {
   }
 
   const data = await response.json();
-
+  console.log(data.message);
+  
   return (
     <main className="">
       <h1 className="text-4xl font-bold text-center">Hello World</h1>
