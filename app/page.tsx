@@ -11,9 +11,7 @@ export default async function PageHome() {
   console.log(data.message)
   return (
     <div>
-      <h1>Home</h1>
-      <p>Welcome to the home page!</p>
-      <Button className="m-2">Click me</Button>
+      <h1>Home Page</h1>
     </div>
   );
 }
