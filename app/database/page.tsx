@@ -26,8 +26,8 @@ export default async function PageDatabase() {
 
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    const data = await response.json();
-    console.log(data.database);
+    // const data = await response.json();
+    // console.log(data.database);
     
     // const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
 
