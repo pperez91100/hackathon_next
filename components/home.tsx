@@ -72,12 +72,11 @@ export default function Home() {
           <div className="flex flex-col gap-4">
             <h2 className="text-2xl md:text-3xl font-bold">OBJECTIFS DU PROJET</h2>
             <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed">
-              Notre objectif est de développer un modèle prédictif robuste pour anticiper les performances des athlètes lors des Jeux Olympiques, en utilisant des données historiques et des techniques avancées d'analyse et de modélisation.
+              Notre objectif est de développer un modèle prédictif robuste pour anticiper les performances des athlètes lors des Jeux Olympiques, en utilisant des données historiques et des techniques avancées d&apos;analyse et de modélisation.
               <br/><br/>
-              1. Analyser et créer des visualisations sur un ensemble de données olympiques de 1896 à 2016 pour découvrir quels pays restent au sommet en prolongation, par saison et par sport, ce qu'il faut pour qu'un olympien soit au sommet dans chaque sport, la popularité du sport et la relation entre le nombre de médailles olympiques et le PIB du pays.
+              1. Analyser et créer des visualisations sur un ensemble de données olympiques de 1896 à 2016 pour découvrir quels pays restent au sommet en prolongation, par saison et par sport, ce qu&apos;il faut pour qu&apos;un olympien soit au sommet dans chaque sport, la popularité du sport et la relation entre le nombre de médailles olympiques et le PIB du pays.
               <br/><br/>
-              2. De plus, à partir de l'ensemble de données olympiques, l'apprentissage automatique a été intégré pour prédire le nombre de médailles que 25 pays obtiendraient aux Jeux olympiques de Tokyo de 2020 avec le modèle de régression linéaire, de régression logistique et de moyenne mobile intégrée auto régressive (ARIMA).
-
+              2. De plus, à partir de l&apos;ensemble de données olympiques, l&apos;apprentissage automatique a été intégré pour prédire le nombre de médailles que 25 pays obtiendraient aux Jeux olympiques de Tokyo de 2020 avec le modèle de régression linéaire, de régression logistique et de moyenne mobile intégrée auto régressive (ARIMA).
             </p>
           </div>
           <img
@@ -183,11 +182,11 @@ export default function Home() {
               <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed">
                 Notre équipe est composée de professionnels passionnés et talentueux, qui travaillent en étroite
                 collaboration pour vous offrir une expérience exceptionnelle.<br/><br/> 
-                Ensemble, nous repoussons les limites de l'innovation pour vous apporter des solutions sur mesure.
+                Ensemble, nous repoussons les limites de l&apos;innovation pour vous apporter des solutions sur mesure.
                 <br/><br/> 
-                Guidés par notre passion commune pour les données et l'analyse, nous nous efforçons de créer un modèle prédictif de pointe pour anticiper les performances des athlètes lors des Jeux Olympiques.
+                Guidés par notre passion commune pour les données et l&apos;analyse, nous nous efforçons de créer un modèle prédictif de pointe pour anticiper les performances des athlètes lors des Jeux Olympiques.
                 <br/><br/>
-                Avec notre expertise collective et notre engagement envers l'excellence, nous sommes déterminés à fournir des prédictions précises et fiables qui aideront à éclairer les stratégies et les décisions dans le domaine du sport de haut niveau.
+                Avec notre expertise collective et notre engagement envers l&apos;excellence, nous sommes déterminés à fournir des prédictions précises et fiables qui aideront à éclairer les stratégies et les décisions dans le domaine du sport de haut niveau.
               </p>
             </div>
           </section>
