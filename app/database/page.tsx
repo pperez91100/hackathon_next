@@ -1,5 +1,3 @@
-'use server';
-
 import { BASE_API_URL } from "@/utils/constants"
 import {
     Table,
@@ -13,10 +11,10 @@ import {
   } from "@/components/ui/table"
 
 // Fonction pour formater les noms de colonnes
-function formatColumnName(columnName: string) {
+function formatColumnName(columnName: any) {
     return columnName
       .split('_')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   }
 
@@ -29,7 +27,7 @@ export default async function Page() {
   
     const data = await response.json();
     
-    const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
+    const columns = data.database.fields.map((field: { name: any; }) => formatColumnName(field.name));
     
     return (
         <div>
@@ -37,7 +35,7 @@ export default async function Page() {
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
-                        {columns.map((column: string) => (
+                        {columns.map((column: any) => (
                             <TableHead key={column}>{column}</TableHead>
                         ))}
                     </TableRow>
