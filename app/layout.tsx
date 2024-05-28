@@ -12,7 +12,7 @@ const fontSans = FontSans({
  
 export const metadata: Metadata = {
   title: "Predict JO",
-  description: "Predictions for the Olympic Games",
+  description: "Predictions for the Olympic Games 2024",
 };
 
 export default async function RootLayout({
