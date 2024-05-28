@@ -26,14 +26,13 @@ export default async function PageDatabase() {
 
     await new Promise(resolve => setTimeout(resolve, 1000));
 
-    // const data = await response.json();
-    // console.log(data.database);
-    
-    // const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
+    const data = await response.json();
+
+    const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
 
     return (
         <div>
-            {/* <Table className="bg-gray-800">
+            <Table className="bg-gray-800">
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
@@ -42,7 +41,7 @@ export default async function PageDatabase() {
                         ))}
                     </TableRow>
                 </TableHeader>
-            </Table> */}
+            </Table>
         </div>
     );
   }
