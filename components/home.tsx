@@ -33,7 +33,7 @@ export default function Home() {
   return (
       <div className="w-full">
         <div className="absolute top-48 right-32 transform -translate-y-1/2 h-[40rem] lg:flex justify-center items-center px-4 hidden z-40">
-          <div className="text-2xl mx-auto font-normal text-white text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-6 px-8 rounded-lg shadow-lg">
+          <div className="text-2xl mx-auto font-bold text-white text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-6 px-8 rounded-lg shadow-lg">
             <div className="inline-block">
               <div>WELCOME TO THE <FlipWords className="text-white" words={words} /></div>
             </div>
