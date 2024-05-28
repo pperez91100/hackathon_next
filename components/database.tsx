@@ -12,7 +12,7 @@ import {
   } from "@/components/ui/table"
 
 interface PredictionsProps {
-    columns: string[];
+    columns: any;
 }
 
 export default function Database({ columns }: PredictionsProps) {
