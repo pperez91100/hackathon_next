@@ -1,4 +1,4 @@
-'use client';
+'use server';
 
 import { BASE_API_URL } from "@/utils/constants"
 import {
