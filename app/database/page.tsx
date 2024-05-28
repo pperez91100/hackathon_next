@@ -12,14 +12,14 @@ import {
 
 export default async function PageDatabase() {
 
-    // const response = await fetch(`${BASE_API_URL}/api/showdatabase`);
-    // if (!response.ok) {
-    //     throw new Error('Erreur lors de la récupération des données');
-    // }
+    const response = await fetch(`${BASE_API_URL}/api/showdatabase`);
+    if (!response.ok) {
+        throw new Error('Erreur lors de la récupération des données');
+    }
   
-    // const data = await response.json();
+    const data = await response.json();
     
-    // const columns = data.database.fields.map((field: { name: string; }) => field.name);
+    const columns = data.database.fields.map((field: { name: string; }) => field.name);
     
     return (
         <div>
