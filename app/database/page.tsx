@@ -1,5 +1,3 @@
-'use client';
-
 import { BASE_API_URL } from "@/utils/constants"
 import {
     Table,
