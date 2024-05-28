@@ -33,18 +33,18 @@ async function getData() {
 
 export default async function PageDatabase() {
 
-    const data = await getData()
+    // const data = await getData()
 
     return (
         <div>
             <Table>
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
-                    <TableRow>
+                    {/* <TableRow>
                         {data.map((column: string) => (
                             <TableHead key={column}>{column}</TableHead>
                         ))}
-                    </TableRow>
+                    </TableRow> */}
                 </TableHeader>
                 {/* <TableBody>
                     {invoices.map((invoice) => (
