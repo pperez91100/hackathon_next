@@ -30,7 +30,6 @@ export default async function Page() {
     const data = await response.json();
     
     const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
-    console.log(columns);
     
     return (
         <div>
