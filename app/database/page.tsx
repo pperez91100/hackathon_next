@@ -1,3 +1,5 @@
+'use client';
+
 import { BASE_API_URL } from "@/utils/constants"
 import {
     Table,
@@ -20,6 +22,7 @@ export default async function PageDatabase() {
     const data = await response.json();
     
     const columns = data.database.fields.map((field: { name: string; }) => field.name);
+    console.log(columns);
     
     return (
         <div>
