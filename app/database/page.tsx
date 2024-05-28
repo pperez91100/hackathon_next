@@ -39,7 +39,7 @@ export default async function PageDatabase() {
       <TableHeader>
         <TableRow>
             {columns.map((column: string) => (
-                <TableHead>{column}</TableHead>
+                <TableHead key={column}>{column}</TableHead>
             ))}
         </TableRow>
       </TableHeader>
