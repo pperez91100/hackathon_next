@@ -28,10 +28,8 @@ export default async function PageDatabase() {
     }
   
     const data = await response.json();
-    console.log(data.database.fields);
     
-    const columns = data.database.fields.map((field: { name: Field; }) => field.name);
-    console.log(columns);
+    const columns = data.database.fields.map((field: { name: string; }) => field.name);
     
     return (
  <Table>
