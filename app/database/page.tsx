@@ -1,3 +1,5 @@
+'use server'
+
 import { BASE_API_URL } from "@/utils/constants"
 import {
     Table,
@@ -10,33 +12,9 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-// export const dynamic = 'force-dynamic'
-// export const revalidate = false
-
-// async function getData() {
-
-//     function formatColumnName(columnName: string) {
-//         return columnName
-//           .split('_')
-//           .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-//           .join(' ');
-//       }
-
-//     const response = await fetch(`${BASE_API_URL}/api/showdatabase`);
-//     if (!response.ok) {
-//         throw new Error('Erreur lors de la récupération des données');
-//     }
-  
-//     const data = await response.json();
-    
-//     const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
-
-//     return columns
-// }
-
 export default async function PageDatabase() {
 
-    const response = await fetch(`${BASE_API_URL}/api/showdatabase`);
+    const response = await fetch(`${BASE_API_URL}/api/showdatabase`,{ cache: 'no-store' });
     if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données');
     }
@@ -44,7 +22,6 @@ export default async function PageDatabase() {
     const data = await response.json();
 
     const columns = data.database.fields.map((field: { name: string; }) => field.name);
-    // const columns = await getData()
 
     return (
         <div>
