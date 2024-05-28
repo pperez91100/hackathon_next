@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google"
+import { Inter } from 'next/font/google'
+import Navbar from "@/components/navbar"
 import "./globals.css";
 
-import { cn } from "@/lib/utils"
-import Navbar from "@/components/navbar"
+const inter = Inter({ subsets: ['latin'] })
 
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-})
- 
 export const metadata: Metadata = {
-  title: "Predict JO",
-  description: "Predictions for the Olympic Games 2024",
+	title: {
+		default: "Predict JO",
+		template: `%s - Predict JO`,
+	},
+	description: "Predictions for the Olympic Games 2024",
+	icons: {
+		icon: "/favicon.ico",
+	},
 };
 
 export default async function RootLayout({
@@ -23,11 +24,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
-        )}
-        >
+      <body className={inter.className}>
           <Navbar />
           <div className="mt-14">
             {children}
