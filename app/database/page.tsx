@@ -26,7 +26,7 @@ export default async function PageDatabase() {
     
     return (
         <div>
-            {/* <Table>
+            <Table>
                 <TableCaption>Databse Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
@@ -35,7 +35,7 @@ export default async function PageDatabase() {
                         ))}
                     </TableRow>
                 </TableHeader>
-                <TableBody>
+                {/* <TableBody>
                     {invoices.map((invoice) => (
                     <TableRow key={invoice.invoice}>
                         <TableCell className="font-medium">{invoice.invoice}</TableCell>
@@ -44,8 +44,8 @@ export default async function PageDatabase() {
                         <TableCell className="text-right">{invoice.totalAmount}</TableCell>
                     </TableRow>
                     ))}
-                </TableBody>
-            </Table> */}
+                </TableBody> */}
+            </Table>
         </div>
     );
   }
