@@ -1,5 +1,3 @@
-'use server'
-
 import { BASE_API_URL } from "@/utils/constants"
 import {
     Table,
@@ -18,14 +16,16 @@ export default async function PageDatabase() {
     if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données');
     }
-  
+
+    await new Promise(resolve => setTimeout(resolve, 3000));
+
     const data = await response.json();
 
     const columns = data.database.fields.map((field: { name: string; }) => field.name);
 
     return (
         <div>
-            <Table>
+            <Table className="bg-gray-800">
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
@@ -34,16 +34,6 @@ export default async function PageDatabase() {
                         ))}
                     </TableRow>
                 </TableHeader>
-                {/* <TableBody>
-                    {invoices.map((invoice) => (
-                    <TableRow key={invoice.invoice}>
-                        <TableCell className="font-medium">{invoice.invoice}</TableCell>
-                        <TableCell>{invoice.paymentStatus}</TableCell>
-                        <TableCell>{invoice.paymentMethod}</TableCell>
-                        <TableCell className="text-right">{invoice.totalAmount}</TableCell>
-                    </TableRow>
-                    ))}
-                </TableBody> */}
             </Table>
         </div>
     );
