@@ -10,6 +10,8 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
+export const dynamic = 'force-dynamic'
+
 async function getData() {
 
     function formatColumnName(columnName: string) {
