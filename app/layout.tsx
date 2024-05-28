@@ -29,7 +29,9 @@ export default async function RootLayout({
         )}
         >
           <Navbar />
-          {children}
+          <div className="mt-14">
+            {children}
+          </div>
       </body>
     </html>
   );
