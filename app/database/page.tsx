@@ -1,5 +1,5 @@
 import { BASE_API_URL } from "@/utils/constants"
-import Database from "@/components/database";
+import Database from "@/components/componentdatabase";
 
 // Fonction pour formater les noms de colonnes
 function formatColumnName(columnName: string) {
