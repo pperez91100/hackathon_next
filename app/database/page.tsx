@@ -12,15 +12,14 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-// Fonction pour formater les noms de colonnes
-function formatColumnName(columnName: string) {
-    return columnName
-      .split('_')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  }
+async function getData() {
 
-export default async function PageDatabase() {
+    function formatColumnName(columnName: string) {
+        return columnName
+          .split('_')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(' ');
+      }
 
     const response = await fetch(`${BASE_API_URL}/api/showdatabase`);
     if (!response.ok) {
@@ -30,15 +29,21 @@ export default async function PageDatabase() {
     const data = await response.json();
     
     const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
-    console.log(columns);
-    
+
+    return columns
+}
+
+export default async function PageDatabase() {
+
+    const data = await getData()
+
     return (
         <div>
             <Table>
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
-                        {columns.map((column: string) => (
+                        {data.map((column: string) => (
                             <TableHead key={column}>{column}</TableHead>
                         ))}
                     </TableRow>
