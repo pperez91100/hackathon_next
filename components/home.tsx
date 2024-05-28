@@ -46,7 +46,7 @@ export default function Home() {
                     {timeLeft.days} : {timeLeft.hours} : {timeLeft.minutes} : {timeLeft.seconds}
                 </p>
                 <p className="text-lg font-bold text-white">
-                    Jeux Olympiques de Paris 2024 - 26 juillet au 11 août 2024
+                    Paris 2024 Olympic Games - July 26 to August 11, 2024
                 </p>
             </div>
           </div>
