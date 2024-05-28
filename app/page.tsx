@@ -1,6 +1,8 @@
 import { BASE_API_URL } from "@/utils/constants"
 import Home from "@/components/home";
 
+export const dynamic = 'force-dynamic'
+
 export default async function PageHome() {
 
   const response = await fetch(`${BASE_API_URL}/api/test`);
