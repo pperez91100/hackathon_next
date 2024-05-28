@@ -1,9 +1,10 @@
 import { BASE_API_URL } from "@/utils/constants"
 import Home from "@/components/home";
 
-export const dynamic = 'force-dynamic'
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 
-export default async function PageHome() {
+export default async function Page() {
 
   const response = await fetch(`${BASE_API_URL}/api/test`);
   if (!response.ok) {
@@ -11,7 +12,7 @@ export default async function PageHome() {
   }
 
   const data = await response.json();
-  console.log(data.message);
+  console.log(data);
   
   return (
     <Home />
