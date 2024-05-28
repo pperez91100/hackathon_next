@@ -12,20 +12,28 @@ import {
 
 export default async function PageDatabase() {
 
+    function formatColumnName(columnName: string) {
+        return columnName
+            .split('_')
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(' ');
+    }
+
     const response = await fetch(`${BASE_API_URL}/api/showdatabase`,{ cache: 'no-store' });
     if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données');
     }
 
-    await new Promise(resolve => setTimeout(resolve, 3000));
+    await new Promise(resolve => setTimeout(resolve, 1000));
 
     const data = await response.json();
-
-    const columns = data.database.fields.map((field: { name: string; }) => field.name);
+    console.log(data.database);
+    
+    // const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
 
     return (
         <div>
-            <Table className="bg-gray-800">
+            {/* <Table className="bg-gray-800">
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
@@ -34,7 +42,7 @@ export default async function PageDatabase() {
                         ))}
                     </TableRow>
                 </TableHeader>
-            </Table>
+            </Table> */}
         </div>
     );
   }
