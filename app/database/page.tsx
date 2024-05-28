@@ -18,7 +18,7 @@ export default async function PageDatabase() {
 
     const data = await response.json();
     
-    const columns: string[] = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
+    const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
     
     return (
         <Database columns={columns} />
