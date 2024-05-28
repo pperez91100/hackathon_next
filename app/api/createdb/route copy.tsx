@@ -1,10 +1,11 @@
+import { sql } from '@vercel/postgres';
 import { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import pool from '@/app/db';
 
 export async function GET(req: NextRequest, res: NextResponse) {
     try {
-        const query = `
+        // Créer la table si elle n'existe pas
+        const result = await sql`
             CREATE TABLE IF NOT EXISTS jo (
                 discipline_title VARCHAR,
                 slug_game VARCHAR,
@@ -21,10 +22,11 @@ export async function GET(req: NextRequest, res: NextResponse) {
             );
         `;
 
-        // Exécuter la requête pour créer la table
-        await pool.query(query);
+        // Chemin vers le fichier CSV
+        // const filePath = path.join(process.cwd(), '/public/olympic_medals.csv');
+        const test = await sql`SELECT * FROM jo;`;
 
-        return NextResponse.json('Table created successfully');
+        return NextResponse.json({ test }, { status: 200 });
     } catch (error) {
         console.error('Error processing request:', error);
         return new NextResponse('Error processing request.', { status: 500 });
