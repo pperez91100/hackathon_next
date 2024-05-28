@@ -1,5 +1,15 @@
 import { BASE_API_URL } from "@/utils/constants"
 import Database from "@/components/componentdatabase";
+import {
+    Table,
+    TableBody,
+    TableCaption,
+    TableCell,
+    TableFooter,
+    TableHead,
+    TableHeader,
+    TableRow,
+  } from "@/components/ui/table"
 
 // Fonction pour formater les noms de colonnes
 function formatColumnName(columnName: string) {
@@ -21,6 +31,18 @@ export default async function PageDatabase() {
     const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
     
     return (
-        <Database columns={columns} />
+        <>
+            <Table>
+                <TableCaption>Database Jo</TableCaption>
+                <TableHeader>
+                    <TableRow>
+                        {columns.map((column: string) => (
+                            <TableHead key={column}>{column}</TableHead>
+                        ))}
+                    </TableRow>
+                </TableHeader>
+            </Table>
+            <Database />
+        </>
     );
   }

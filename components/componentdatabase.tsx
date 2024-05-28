@@ -9,15 +9,12 @@ import {
     TableRow,
   } from "@/components/ui/table"
 
-interface PredictionsProps {
-    columns: any;
-}
 
-export default function componentDatabase({ columns }: PredictionsProps) {
+export default function componentDatabase() {
 
     return (
         <div>
-            <Table>
+            {/* <Table>
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
                     <TableRow>
@@ -26,17 +23,7 @@ export default function componentDatabase({ columns }: PredictionsProps) {
                         ))}
                     </TableRow>
                 </TableHeader>
-                {/* <TableBody>
-                    {invoices.map((invoice) => (
-                    <TableRow key={invoice.invoice}>
-                        <TableCell className="font-medium">{invoice.invoice}</TableCell>
-                        <TableCell>{invoice.paymentStatus}</TableCell>
-                        <TableCell>{invoice.paymentMethod}</TableCell>
-                        <TableCell className="text-right">{invoice.totalAmount}</TableCell>
-                    </TableRow>
-                    ))}
-                </TableBody> */}
-            </Table>
+            </Table> */}
         </div>
     );
   }
