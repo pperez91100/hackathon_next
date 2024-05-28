@@ -1,5 +1,6 @@
+'use client';
+
 import { BASE_API_URL } from "@/utils/constants"
-import Database from "@/components/componentdatabase";
 import {
     Table,
     TableBody,
@@ -25,13 +26,14 @@ export default async function PageDatabase() {
     if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données');
     }
-
+  
     const data = await response.json();
     
     const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
+    console.log(columns);
     
     return (
-        <>
+        <div>
             <Table>
                 <TableCaption>Database Jo</TableCaption>
                 <TableHeader>
@@ -41,8 +43,17 @@ export default async function PageDatabase() {
                         ))}
                     </TableRow>
                 </TableHeader>
+                {/* <TableBody>
+                    {invoices.map((invoice) => (
+                    <TableRow key={invoice.invoice}>
+                        <TableCell className="font-medium">{invoice.invoice}</TableCell>
+                        <TableCell>{invoice.paymentStatus}</TableCell>
+                        <TableCell>{invoice.paymentMethod}</TableCell>
+                        <TableCell className="text-right">{invoice.totalAmount}</TableCell>
+                    </TableRow>
+                    ))}
+                </TableBody> */}
             </Table>
-            <Database />
-        </>
+        </div>
     );
   }
