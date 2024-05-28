@@ -13,7 +13,7 @@ interface PredictionsProps {
     columns: any;
 }
 
-export default function Database({ columns }: PredictionsProps) {
+export default function componentDatabase({ columns }: PredictionsProps) {
 
     return (
         <div>
