@@ -2,13 +2,13 @@ import { BASE_API_URL } from "@/utils/constants"
 
 export default async function PageHome() {
 
-  // const response = await fetch(`${BASE_API_URL}/api/test`);
-  // if (!response.ok) {
-  //     throw new Error('Erreur lors de la récupération des données');
-  // }
+  const response = await fetch(`${BASE_API_URL}/api/test`);
+  if (!response.ok) {
+      throw new Error('Erreur lors de la récupération des données');
+  }
 
-  // const data = await response.json();
-  // console.log(data.message);
+  const data = await response.json();
+  console.log(data.message);
   
   return (
       <div className="w-full">
