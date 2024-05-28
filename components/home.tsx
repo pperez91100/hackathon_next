@@ -53,13 +53,13 @@ export default function Home() {
         </div>
         <img
           alt="Cover Image"
-          className="w-full max-h-screen object-cover block lg:hidden p-6"
+          className="w-full max-h-screen object-cover block lg:hidden px-6"
           src="/img_jo2.png"
         />
-        <div className="relative w-full min-h-screen">
+        <div className="hidden lg:block relative w-full min-h-screen">
             <img
                 alt="Cover Image"
-                className="w-full h-full object-cover hidden lg:block"
+                className="w-full h-full object-cover"
                 src="/img_jo.png"
             />
             <div className="absolute bottom-0 w-full h-2/4 bg-gradient-to-t from-white to-transparent"></div>
