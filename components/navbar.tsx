@@ -11,10 +11,10 @@ export default function Navbar() {
               Show Database
             </Link>
             <Link className="hover:text-gray-400" href="/olympic_predictions">
-              Olympic Prediction
+              Olympic Predictions
             </Link>
             <Link className="hover:text-gray-400" href="#">
-            xxxxx
+              xxxxx
             </Link>
         </div>
     </nav>

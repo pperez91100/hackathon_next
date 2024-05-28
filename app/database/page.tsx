@@ -1,5 +1,5 @@
 import { BASE_API_URL } from "@/utils/constants"
-import Predictions from "@/components/predictions";
+import Database from "@/components/database";
 
 // Fonction pour formater les noms de colonnes
 function formatColumnName(columnName: string) {
@@ -21,6 +21,6 @@ export default async function PageDatabase() {
     const columns: string[] = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
     
     return (
-        <Predictions columns={columns} />
+        <Database columns={columns} />
     );
   }

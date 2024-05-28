@@ -15,8 +15,8 @@ interface PredictionsProps {
     columns: string[];
 }
 
-export default function Predictions({ columns }: PredictionsProps) {
-    console.log(columns);
+export default function Database({ columns }: PredictionsProps) {
+
     return (
         <div>
             <Table>
