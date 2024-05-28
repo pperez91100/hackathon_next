@@ -20,7 +20,7 @@ function formatColumnName(columnName: string) {
       .join(' ');
   }
 
-export default async function PageDatabase() {
+export default async function Page() {
 
     const response = await fetch(`${BASE_API_URL}/api/showdatabase`);
     if (!response.ok) {
