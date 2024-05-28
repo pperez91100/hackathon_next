@@ -1,9 +1,6 @@
 import { sql } from '@vercel/postgres';
 import { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
-import { parse } from 'csv-parse';
 
 export async function GET(req: NextRequest, res: NextResponse) {
     try {
