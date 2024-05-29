@@ -39,9 +39,9 @@ export async function GET(req: NextRequest, res: NextResponse) {
         // Formater les clés des colonnes
         const results_jo = formatRows(resultsJoResult.rows);
 
-        return NextResponse.json({ athletes_jo, results_jo }, { status: 200 });
+        return NextResponse.json({ athletes_jo, results_jo });
     } catch (error) {
         console.error('Error processing request:', error);
-        return new NextResponse('Error processing request.', { status: 500 });
+        return new NextResponse('Error processing request.');
     }
 }
