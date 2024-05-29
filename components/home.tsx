@@ -32,25 +32,25 @@ export default function Home() {
 
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  const words = ["PARIS", "OLYMPICS", "GAMES", "SPORTS"];
+  const words = ["OLYMPICS", "JEUX", "SPORTS"];
 
   return (
       <div className="w-full">
         <div className="absolute top-48 right-32 transform -translate-y-1/2 h-[40rem] lg:flex justify-center items-center px-4 hidden z-40">
           <div className="text-2xl mx-auto font-bold text-white text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-6 px-8 rounded-lg shadow-lg">
             <div className="inline-block">
-              <div>WELCOME TO THE <FlipWords className="text-white" words={words} /></div>
+              <div>BIENVENUE AUX <FlipWords className="text-white" words={words} /></div>
             </div>
             <br />
             <p className="inline-block">
-              CELEBRATING THE PARIS 2024 OLYMPICS
+              CÉLÉBRER LES JEUX OLYMPIQUES DE PARIS 2024
             </p>
             <div className="mt-4 p-4 bg-white bg-opacity-20 rounded-lg shadow-md text-center">
                 <p className="text-3xl font-bold text-white">
                   {addLeadingZero(timeLeft.days)} : {addLeadingZero(timeLeft.hours)} : {addLeadingZero(timeLeft.minutes)} : {addLeadingZero(timeLeft.seconds)}
                 </p>
                 <p className="text-lg font-bold text-white">
-                    Paris 2024 Olympic Games - July 26 to August 11, 2024
+                  Jeux olympiques de Paris 2024 - 26 juillet au 11 août 2024
                 </p>
             </div>
           </div>
