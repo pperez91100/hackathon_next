@@ -6,6 +6,8 @@ import FeaturedVideo from './FeaturedVideo';
 import FeaturedContent from './FeaturedContent';
 import AutourDesJeux from './AutourDesJeux';
 import Objectifs from './Objectifs';
+import NotreEquipe from './NotreEquipe';
+
 
 export default function Home() {
 
@@ -73,113 +75,10 @@ export default function Home() {
         <div className="absolute bottom-0 w-full h-2/4 bg-gradient-to-t from-white to-transparent"></div>
       </div>
       <Objectifs />
-      {/* <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8">
-        <div className="grid grid-cols-4 gap-8">
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_01"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/tanguy.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Tanguy MOREL</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_02"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/romain.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Romain RULLIER</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_03"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/pablo.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Pablo PEREZ</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_04"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/kaotar.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Kaotar TEMOUDEN</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_05"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/adrien.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Adrien MANFREDI</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_06"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/aboubakar.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Aboubakar MEITE</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_07"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/douaa.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Douâa ABID</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <img
-              alt="Equipier_08"
-              className="rounded-full object-cover shadow-md border border-gray-300"
-              height="100"
-              src="/nada.svg"
-              width="150"
-            />
-            <p className="mt-2 text-center text-xl font-semibold text-gray-800">Nada AL IBRAHIMI</p>
-            <p className="mt-1 text-center text-lg font-medium text-gray-600">Chef de Projet</p>
-          </div>
-        </div>
+      <NotreEquipe />
 
-        <div className="flex flex-col gap-4 order-1 md:order-2">
-          <h2 className="text-2xl md:text-3xl font-bold">NOTRE EQUIPE</h2>
-          <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed">
-            Notre équipe est composée de professionnels passionnés et talentueux, qui travaillent en étroite
-            collaboration pour vous offrir une expérience exceptionnelle.<br /><br />
-            Ensemble, nous repoussons les limites de l&apos;innovation pour vous apporter des solutions sur mesure.
-            <br /><br />
-            Guidés par notre passion commune pour les données et l&apos;analyse, nous nous efforçons de créer un modèle prédictif de pointe pour anticiper les performances des athlètes lors des Jeux Olympiques.
-            <br /><br />
-            Avec notre expertise collective et notre engagement envers l&apos;excellence, nous sommes déterminés à fournir des prédictions précises et fiables qui aideront à éclairer les stratégies et les décisions dans le domaine du sport de haut niveau.
-          </p>
-        </div>
-      </section>
       <AutourDesJeux />
-      <FeaturedContent /> */}
+      {/* <FeaturedContent /> */}
 
     </div>
   );

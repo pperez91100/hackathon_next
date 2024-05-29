@@ -18,7 +18,7 @@ const Objectifs = () => {
                     </li>
                 </ul>
             </div>
-            <div className='flex items-center max-w-screen-sm h-auto py-10  '>
+            <div className='flex items-center max-w-screen-lg h-auto py-10  '>
                 <img src="/home_1.jpg" alt="" />
             </div>
         </section>

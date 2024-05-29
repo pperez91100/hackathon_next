@@ -11,9 +11,9 @@ const AutourDesJeux: React.FC = () => {
 
     return (
         <>
-            <div className="flex flex-col gap-10 items-start h-fit w-100 min-w-1000 px-20 py-20">
-                <h1 className='text-2xl md:text-3xl font-bold'>Autour des Jeux</h1>
-                <div className="flex justify-center w-fi gap-20">
+            <div className="flex flex-col gap-10 justify-evenly h-fit w-100 min-w-1000 p-10">
+                <h1 className='text-2xl md:text-3xl font-bold uppercase'>Autour des Jeux</h1>
+                <div className="flex flex-wrap justify-center gap-10 sm:justify-start">
                     {categories.map(item => (
                         <AutourDesJeuxCat key={item.id} name={item.name} src={item.src} url={item.url} />
                     ))}
