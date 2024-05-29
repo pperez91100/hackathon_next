@@ -78,7 +78,7 @@ export default function Home() {
       <NotreEquipe />
 
       <AutourDesJeux />
-      {/* <FeaturedContent /> */}
+      <FeaturedContent />
 
     </div>
   );

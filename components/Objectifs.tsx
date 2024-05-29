@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Objectifs = () => {
     return (
-        <section className="flex flex-col h-fit w-full justify-between  p-10 gap-10 sm:p-10 min-[1025px]:flex-row ">
+        <section className="flex flex-col h-fit w-full justify-between p-10 gap-10 sm:p-10 min-[1025px]:flex-row ">
             <div className="flex flex-col max-w-screen-sm gap-8 xl:max-w-screen-lg">
                 <h2 className="text-2xl md:text-3xl font-bold uppercase">objectifs du projet</h2>
                 <p className="text-gray-600 text-base md:text-lg leading-relaxed">
