@@ -92,7 +92,7 @@ export default function Home() {
                   alt="Equipier_01"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/tanguy.svg"
                   width="150"
                 />
                   <p className="mt-2 text-center text-xl font-semibold text-gray-800">Tanguy MOREL</p>
@@ -103,7 +103,7 @@ export default function Home() {
                   alt="Equipier_02"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/romain.svg"
                   width="150"
                 />
                   <p className="mt-2 text-center text-xl font-semibold text-gray-800">Romain RULLIER</p>
@@ -136,7 +136,7 @@ export default function Home() {
                   alt="Equipier_05"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/adrien.svg"
                   width="150"
                 />
                   <p className="mt-2 text-center text-xl font-semibold text-gray-800">Adrien MANFREDI</p>
@@ -147,7 +147,7 @@ export default function Home() {
                   alt="Equipier_06"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/aboubakar.svg"
                   width="150"
                 />
                   <p className="mt-2 text-center text-xl font-semibold text-gray-800">Aboubakar MEITE</p>
@@ -158,7 +158,7 @@ export default function Home() {
                   alt="Equipier_07"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/aboubakar.svg"
+                  src="/douaa.svg"
                   width="150"
                 />
                 <p className="mt-2 text-center text-xl font-semibold text-gray-800">Douâa ABID</p>
@@ -169,7 +169,7 @@ export default function Home() {
                   alt="Equipier_08"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/nada.svg"
                   width="150"
                 />
                   <p className="mt-2 text-center text-xl font-semibold text-gray-800">Nada AL IBRAHIMI</p>
