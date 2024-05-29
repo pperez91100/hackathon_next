@@ -3,7 +3,7 @@ import Database from "@/components/database";
 
 export default async function PageDatabase() {
 
-    const response = await fetch(`${BASE_API_URL}/api/showdatabase`,{ cache: 'no-store' });
+    const response = await fetch(`https://predict-jo.vercel.app/api/showdatabase`,{ cache: 'no-store' });
     if (!response.ok) {
         throw new Error('Erreur lors de la récupération des données');
     }
