@@ -3,7 +3,7 @@ import Home from "@/components/home";
 
 export default async function Page() {
 
-  const response = await fetch(`https://hackathon-fastapi.vercel.app/`);
+  const response = await fetch(`${BASE_API_URL}/api/test`);
   if (!response.ok) {
       throw new Error('Erreur lors de la récupération des données');
   }
