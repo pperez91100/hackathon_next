@@ -125,7 +125,7 @@ export default function Home() {
                   alt="Equipier_04"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/kaotar.svg"
                   width="150"
                 />
                   <p className="mt-2 text-center text-xl font-semibold text-gray-800">Kaotar TEMOUDEN</p>
@@ -158,7 +158,7 @@ export default function Home() {
                   alt="Equipier_07"
                   className="rounded-full object-cover shadow-md border border-gray-300"
                   height="100"
-                  src="/pablo.svg"
+                  src="/aboubakar.svg"
                   width="150"
                 />
                 <p className="mt-2 text-center text-xl font-semibold text-gray-800">Douâa ABID</p>
