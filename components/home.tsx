@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { FlipWords } from "@/components/ui/flip-words";
 import FeaturedVideo from './FeaturedVideo';
 import FeaturedContent from './FeaturedContent';
+import AutourDesJeux from './AutourDesJeux';
+import Objectifs from './Objectifs';
 
 export default function Home() {
 
@@ -37,7 +39,7 @@ export default function Home() {
   const words = ["OLYMPICS", "JEUX", "SPORTS"];
 
   return (
-    <div className="w-full">
+    <div className="w-ful sm:w-full">
       <div className="absolute top-48 right-32 transform -translate-y-1/2 h-[40rem] lg:flex justify-center items-center px-4 hidden z-40">
         <div className="text-2xl mx-auto font-bold text-white text-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-6 px-8 rounded-lg shadow-lg">
           <div className="inline-block">
@@ -70,24 +72,8 @@ export default function Home() {
         />
         <div className="absolute bottom-0 w-full h-2/4 bg-gradient-to-t from-white to-transparent"></div>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8">
-        <div className="flex flex-col gap-4">
-          <h2 className="text-2xl md:text-3xl font-bold">OBJECTIFS DU PROJET</h2>
-          <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed">
-            Notre objectif est de développer un modèle prédictif robuste pour anticiper les performances des athlètes lors des Jeux Olympiques, en utilisant des données historiques et des techniques avancées d&apos;analyse et de modélisation.
-            <br /><br />
-            1. Analyser et créer des visualisations sur un ensemble de données olympiques de 1896 à 2016 pour découvrir quels pays restent au sommet en prolongation, par saison et par sport, ce qu&apos;il faut pour qu&apos;un olympien soit au sommet dans chaque sport, la popularité du sport et la relation entre le nombre de médailles olympiques et le PIB du pays.
-            <br /><br />
-            2. De plus, à partir de l&apos;ensemble de données olympiques, l&apos;apprentissage automatique a été intégré pour prédire le nombre de médailles que 25 pays obtiendraient aux Jeux olympiques de Tokyo de 2020 avec le modèle de régression linéaire, de régression logistique et de moyenne mobile intégrée auto régressive (ARIMA).
-          </p>
-        </div>
-        <img
-          alt="Notre philosophie"
-          className="rounded-2xl"
-          src="/home_1.jpg"
-        />
-      </section>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8">
+      <Objectifs />
+      {/* <section className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8">
         <div className="grid grid-cols-4 gap-8">
           <div className="flex flex-col items-center">
             <img
@@ -192,7 +178,9 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <FeaturedContent />
+      <AutourDesJeux />
+      <FeaturedContent /> */}
+
     </div>
   );
 }
