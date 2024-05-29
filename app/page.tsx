@@ -1,5 +1,6 @@
 import { BASE_API_URL } from "@/utils/constants"
 import Home from "@/components/home";
+import ScrollerInfo from "@/components/ScrollerInfo";
 
 export default async function Page() {
 
@@ -12,6 +13,9 @@ export default async function Page() {
   console.log(data);
   
   return (
+    <>
     <Home />
+    <ScrollerInfo/>
+    </>
   );
 }
