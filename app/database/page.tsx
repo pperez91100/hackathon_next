@@ -16,10 +16,10 @@ export default async function PageDatabase() {
             for (const key in row) {
                 if (row.hasOwnProperty(key)) {
                     let value = row[key];
-                    // Remplacer les valeurs vides par 'N'
-                    if (value === null || value === undefined || value === '') {
-                        value = 'NULL';
-                    }
+                    // // Remplacer les valeurs vides par 'N'
+                    // if (value === null || value === undefined || value === '') {
+                    //     value = 'NULL';
+                    // }
                     formattedRow[formatColumnName(key)] = value;
                 }
             }

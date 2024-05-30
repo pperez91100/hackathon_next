@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import * as XLSX from 'xlsx';
 import {
   Table,
   TableBody,
@@ -48,11 +49,18 @@ export default function Database({ data1, data2 }: DatabaseProps) {
     setSelectedData(newData);
   };
 
+  const exportToExcel = (data: Data[], filename: string) => {
+    const worksheet = XLSX.utils.json_to_sheet(data);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet1");
+    XLSX.writeFile(workbook, filename);
+  };
+
   return (
     <div>
-      <div className="flex">
+      <div className="flex w-full">
         <Button
-          className={`px-4 py-2 rounded-none hover:bg-black ${
+          className={`flex-1 lg:flex-none px-4 py-2 rounded-none hover:bg-blue-500 ${
             selectedData === data1 ? 'bg-blue-500 text-white' : 'bg-gray-300'
           }`}
           onClick={() => switchData(data1)}
@@ -60,18 +68,24 @@ export default function Database({ data1, data2 }: DatabaseProps) {
           ATHLETES JO
         </Button>
         <Button
-          className={`px-4 py-2 rounded-none hover:bg-black ${
+          className={`flex-1 lg:flex-none px-4 py-2 rounded-none hover:bg-blue-500 ${
             selectedData === data2 ? 'bg-blue-500 text-white' : 'bg-gray-300'
           }`}
           onClick={() => switchData(data2)}
         >
           RESULTS JO
         </Button>
+        <Button
+          className='flex-1 lg:flex-none px-4 py-2 rounded-none hover:bg-green-500 bg-green-500 text-white'
+          onClick={() => exportToExcel(selectedData, selectedData === data1 ? 'data1.xlsx' : 'data2.xlsx')}
+        >
+          EXPORT EXCEL
+        </Button>
       </div>
       <Table>
         <TableCaption>Database</TableCaption>
         <TableHeader>
-          <TableRow>
+          <TableRow className="bg-gray-100 hover:bg-gray-100">
             {selectedColumns.map((column: string, index: number) => (
               <TableHead className="text-center" key={index}>{column}</TableHead>
             ))}
