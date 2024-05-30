@@ -16,7 +16,8 @@ Bienvenue sur le projet Hackathon réalisé par une équipe de 8 étudiants de l
 ## Liens <a name="Liens"></a>
 
 - [Lien En Production](https://predict-jo.vercel.app/)
-- [Lien En Trello](https://hackathon-fastapi.vercel.app/)
+- [Lien En API Python](https://hackathon-fastapi.vercel.app/)
+- [Lien En Trello](https://trello.com/invite/b/JW9SjgSV/ATTI46d2f862966f2981dc0113c0756994c08D4E0A36/hackathon-jo-2024)
 
 ## Description <a name="Description"></a>
 
