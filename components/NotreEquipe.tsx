@@ -20,7 +20,7 @@ const AvatarsSection = () => {
 
         <section className="flex flex-col">
             <div className="flex flex-col  gap-4 p-10">
-                <h2 className="text-2xl md:text-3xl font-bold">NOTRE EQUIPE</h2>
+                <h2 className="text-2xl md:text-3xl font-bold uppercase">notre équipe</h2>
                 <p className="text-gray-600 dark:text-gray-400 text-base md:text-lg leading-relaxed">
                     Notre équipe est composée de professionnels passionnés et talentueux, qui travaillent en étroite
                     collaboration pour vous offrir une expérience exceptionnelle.<br /><br />

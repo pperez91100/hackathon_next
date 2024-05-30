@@ -8,7 +8,6 @@ import AutourDesJeux from './AutourDesJeux';
 import Objectifs from './Objectifs';
 import NotreEquipe from './NotreEquipe';
 
-
 export default function Home() {
 
   const addLeadingZero = (value: number) => {
@@ -79,6 +78,7 @@ export default function Home() {
 
       <AutourDesJeux />
       <FeaturedContent />
+      <FancyScroll />
 
     </div>
   );
