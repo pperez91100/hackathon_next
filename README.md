@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projet Hackathon - Prédictions IA pour les JO 2024
+## Introduction
 
-## Getting Started
+Bienvenue sur le projet Hackathon réalisé par une équipe de 8 étudiants de l'école IPSSI. Ce projet vise à créer une webapp utilisant l'intelligence artificielle pour prédire les résultats des Jeux Olympiques 2024.
 
-First, run the development server:
+## Table des matières
+1. [Liens](#Liens)
+2. [Description](#Description)
+3. [Technologies Utilisées](#Technologies)
+4. [Installation](#Installation)
+5. [Utilisation](#Utilisation)
+6. [Contributeurs](#Contributeurs)
+7. [Licence](#Licence)
 
+
+## Liens <a name="Liens"></a>
+
+- [Lien En Production](https://predict-jo.vercel.app/)
+- [Lien En API Python](https://hackathon-fastapi.vercel.app/)
+- [Lien En Trello](https://trello.com/invite/b/JW9SjgSV/ATTI46d2f862966f2981dc0113c0756994c08D4E0A36/hackathon-jo-2024)
+
+## Description <a name="Description"></a>
+
+Ce projet a été développé dans le cadre d'un hackathon organisé par l'école IPSSI. Notre objectif était de développer une application web capable de prédire les résultats des épreuves des Jeux Olympiques 2024 grâce à des modèles d'intelligence artificielle.
+
+## Technologies Utilisées <a name="Technologies"></a>
+  - Frontend : Next.js, Shadcn-ui
+  - Backend : Node.js
+  - Langages de programmation : TypeScript, Python
+  - IA et Machine Learning : TensorFlow, Scikit-learn
+  - Base de données : PostgreSQL
+  - Serveur: Vercel
+
+## Installation En Local <a name="Installation"></a>
+
+### Prérequis
+
+Assurez-vous d'avoir installé :
+
+- Node.js
+- npm ou yarn
+- Python
+
+### Prérequis
+
+1. Clonez le repôt
+```bash
+git clone https://github.com/pperez91100/hackathon_next.git
+```
+2. Installez les dépendances :
+```bash
+npm install
+```
+3. Configurez les variables d'environnement (fichier .env.local à la racine du projet) :
+```bash
+NEXT_PUBLIC_BASE_API_URL="http://localhost:3000"
+```
+4. Démarrez la WebApp:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Utilisation <a name="Utilisation"></a>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Une fois l'application démarrée, vous pouvez :
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Naviguer à travers les différentes Onglet pour explorer les prédictions des résultats des JO 2024.
 
-## Learn More
+## Contributeurs <a name="Contributeurs"></a>
 
-To learn more about Next.js, take a look at the following resources:
+Ce projet a été réalisé par une équipe de 8 étudiants passionnés de l'école IPSSI :
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Tanguy
+- Romain
+- Pablo
+- Adrien
+- Kaotar
+- Aboubakar
+- Douaa
+- Nada
+  
+## Licence <a name="Licence"></a>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Ce projet est sous licence MIT. Veuillez consulter le fichier LICENSE pour plus d'informations.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
