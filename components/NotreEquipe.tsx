@@ -6,7 +6,7 @@ const avatars = [
     { id: 0, name: 'Tanguy', job: 'Chef de projet', img: '/tanguy.svg' },
     { id: 1, name: 'Romain', job: 'Chef de projet', img: '/romain.svg' },
     { id: 2, name: 'Pablo', job: 'Chef de projet', img: '/pablo.svg' },
-    { id: 3, name: 'Romain', job: 'Chef de projet', img: '/romain.svg' },
+    { id: 3, name: 'Adrien', job: 'Chef de projet', img: '/adrien.svg' },
     { id: 4, name: 'Kaotar', job: 'Chef de projet', img: '/kaotar.svg' },
     { id: 5, name: 'Aboubakar', job: 'Chef de projet', img: '/aboubakar.svg' },
     { id: 6, name: 'Douaa', job: 'Chef de projet', img: '/douaa.svg' },
@@ -33,7 +33,7 @@ const AvatarsSection = () => {
                     <Avatars key={avatar.id} name={avatar.name} job={avatar.job} img={avatar.img} />
                 ))}
             </div>
-    </section>
+        </section>
     )
 }
 
