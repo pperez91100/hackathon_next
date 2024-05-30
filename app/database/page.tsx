@@ -33,7 +33,8 @@ export default async function PageDatabase() {
     }
 
     const data = await response.json();
-    
+    console.log(data);
+
     const data1 = formatRows(data.athletes_jo);
     const data2 = formatRows(data.results_jo);
 
