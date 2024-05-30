@@ -37,11 +37,8 @@ export default function Navbar() {
           <Link className="hover:text-gray-400" href="/database">
             Show Database
           </Link>
-          <Link className="hover:text-gray-400" href="/olympic_predictions">
+          <Link className="hover:text-gray-400" href="/predict">
             Olympic Predictions
-          </Link>
-          <Link className="hover:text-gray-400" href="#">
-            xxxxx
           </Link>
         </div>
       </nav>
