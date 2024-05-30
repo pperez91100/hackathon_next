@@ -1,22 +1,30 @@
 import { BASE_API_URL } from "@/utils/constants"
-import {
-    Table,
-    TableBody,
-    TableCaption,
-    TableCell,
-    TableFooter,
-    TableHead,
-    TableHeader,
-    TableRow,
-  } from "@/components/ui/table"
+import Database from "@/components/database";
 
 export default async function PageDatabase() {
 
-    function formatColumnName(columnName: string) {
+    function formatColumnName(columnName: string): string {
         return columnName
             .split('_')
             .map(word => word.charAt(0).toUpperCase() + word.slice(1))
             .join(' ');
+    }
+    
+    function formatRows(rows: any[]): any[] {
+        return rows.map(row => {
+            const formattedRow: any = {};
+            for (const key in row) {
+                if (row.hasOwnProperty(key)) {
+                    let value = row[key];
+                    // Remplacer les valeurs vides par 'N'
+                    if (value === null || value === undefined || value === '') {
+                        value = 'NULL';
+                    }
+                    formattedRow[formatColumnName(key)] = value;
+                }
+            }
+            return formattedRow;
+        });
     }
 
     const response = await fetch(`${BASE_API_URL}/api/showdatabase`,{ cache: 'no-store' });
@@ -24,25 +32,13 @@ export default async function PageDatabase() {
         throw new Error('Erreur lors de la récupération des données');
     }
 
-    await new Promise(resolve => setTimeout(resolve, 1000));
-
     const data = await response.json();
-    
-    const columns = data.database.fields.map((field: { name: string; }) => formatColumnName(field.name));
-    console.log(columns);
-    
+    console.log(data);
+
+    const data1 = formatRows(data.athletes_jo);
+    const data2 = formatRows(data.results_jo);
+
     return (
-        <div>
-            <Table className="bg-gray-800">
-                <TableCaption>Database Jo</TableCaption>
-                <TableHeader>
-                    <TableRow>
-                        {columns.map((column: string) => (
-                            <TableHead key={column}>{column}</TableHead>
-                        ))}
-                    </TableRow>
-                </TableHeader>
-            </Table>
-        </div>
+        <Database data1={data1} data2={data2} />
     );
   }

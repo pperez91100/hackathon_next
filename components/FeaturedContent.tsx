@@ -10,16 +10,16 @@ const FeaturedContent: React.FC = () => {
     ];
 
     return (
-        <>
-            <div className="flex flex-col gap-10 items-start h-fit w-100 min-w-1000 px-20 py-20 ">
-                <h1 className='text-2xl md:text-3xl font-bold'>Featured Videos</h1>
-                <div className="flex justify-center w-fi gap-20">
+        <div className="p-10 w-full">
+            <div className="flex flex-col gap-10 ">
+                <h1 className='text-2xl md:text-3xl font-bold uppercase'>Contenu suggéré</h1>
+                <div className="flex flex-wrap gap-10 sm:justify-start max-w-screen-lg">
                     {videos.map(video => (
                         <FeaturedVideo key={video.id} name={video.name} url={video.url} />
                     ))}
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
