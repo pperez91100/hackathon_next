@@ -11,14 +11,14 @@ const Predict: React.FC = () => {
             <img src="/bronze_medailles_IA.png" alt=" Bronze Médailles IA" />
             <img src="/France_medailles_IA.png" alt=" Gold Médailles IA" />
 
-            <h2> Methode Coude </h2>
+            <h1> Methode Coude </h1>
             <img src="/elbow_plot.png" ></img>
-            <h2>Clusters ( nbre de medaills par type )</h2>
+            <h1>Les Differents Clusters obtenues par Kmeans </h1>
             <img src="/cluster_performances_olympiques.png" ></img>
-            <h2> clusters & pca </h2>
+            <h1> Analyse des clusteurs par Correlation et ACP </h1>
             <img src="/correlation_and_pca.png" ></img>
-            <h2> Caracteristiques des clusters </h2>
-            <img src="/clusters_and_box_plots.html" ></img>
+            <h2> Observation des caracteristiques des clusters </h2>
+            <img src="/clusters_and_box_plots.png" ></img>
 
         </div>
 
