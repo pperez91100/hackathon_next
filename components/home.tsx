@@ -75,10 +75,8 @@ export default function Home() {
       </div>
       <Objectifs />
       <NotreEquipe />
-
       <AutourDesJeux />
       <FeaturedContent />
-
     </div>
   );
 }
