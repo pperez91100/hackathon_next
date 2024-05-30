@@ -7,13 +7,14 @@ import pool from '@/app/db';
 
 export async function GET(req: NextRequest, res: NextResponse) {
     try {
-        // Sélectionner toutes les lignes de la table 'athletes_jo'
-        const athletesJoResult = await pool.query('SELECT * FROM athletes_jo;');
+        
+        // Sélectionner jusqu'à 1000 lignes de la table 'athletes_jo'
+        const athletesJoResult = await pool.query('SELECT * FROM athletes_jo LIMIT 1000;');
         // Formater les clés des colonnes
         const athletes_jo = athletesJoResult.rows;
 
-        // Sélectionner toutes les lignes de la table 'results_jo'
-        const resultsJoResult = await pool.query('SELECT * FROM results_jo;');
+        // Sélectionner jusqu'à 1000 lignes de la table 'results_jo'
+        const resultsJoResult = await pool.query('SELECT * FROM results_jo LIMIT 1000;');
         // Formater les clés des colonnes
         const results_jo = resultsJoResult.rows;
 
