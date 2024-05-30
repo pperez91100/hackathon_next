@@ -11,7 +11,7 @@ const FeaturedVideo: React.FC<FeaturedVideoProps> = ({ name, url }) => {
 
     return (
         <div className=" flex flex-col flex-wrap items-center gap-5 sm:items-start">
-            <h3 className="mt-2 text-center text-xl font-semibold text-gray-800">{name}</h3>
+            <h3 className="mt-2 text-center text-xl font-semibold  text-gray-800">{name}</h3>
             <div className="fle aspect-video ">
                 <iframe
                     src={`https://www.youtube.com/embed/${videoId}`}
